@@ -1,0 +1,151 @@
+/* desktop sizes */
+/* colors */
+/* font and font sizes */
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+html, body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(30, 54%, 90%);
+  margin-top: 0;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+body {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.8rem 0.8rem 0 0;
+  margin: 5vw 0 5vw 0;
+  max-width: 22rem;
+}
+
+.card__image--fixed {
+  border-radius: 0.8rem 0.8rem 0 0;
+  height: 100%;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 1.5rem 1.75rem 1.5rem;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.35em;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+.card__title {
+  font-family: "Fraunces", sans-serif;
+  color: hsl(212, 21%, 14%);
+  line-height: 110%;
+  font-size: 2rem;
+}
+
+.card__copy {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.card__prices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.card__prices .card__prices--discount {
+  font-family: "Fraunces", sans-serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 2rem;
+}
+.card__prices .card__prices--original {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.card__button {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0 0.75rem 0;
+  border-radius: 0.625rem;
+  font-size: 0.825rem;
+}
+
+.card__button:hover {
+  background-color: hsl(158, 36%, 21%);
+  cursor: pointer;
+}
+
+@media (min-width: 35rem) {
+  body {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 0.8rem;
+    max-width: 36rem;
+  }
+  .card__image--fixed {
+    border-radius: 0.8rem 0 0 0.8rem;
+  }
+}/*# sourceMappingURL=main.css.map */
